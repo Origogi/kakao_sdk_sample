@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kakao_flutter_sdk/all.dart';
 import 'package:kakao_sdk_sample/pages/install_check.dart';
+import 'package:kakao_sdk_sample/pages/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,6 +45,15 @@ class _MainPageState extends State<MainPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => KakaoInstalledPage()),
+                );
+              },
+            ),
+            RaisedButton(
+              child: Text("Kakao Login"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => KakaoLogin()),
                 );
               },
             )
