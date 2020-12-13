@@ -24,8 +24,12 @@ class _KakaoLoginState extends State<KakaoLogin> {
 
   _loginWithKakao() async {
     try {
-      var code = await AuthCodeClient.instance.request();
-      await _issueAccessToken(code);
+      final installed = await isKakaoTalkInstalled();
+      final authCode = installed
+          ? await AuthCodeClient.instance.requestWithTalk()
+          : await AuthCodeClient.instance.request();
+
+      await _issueAccessToken(authCode);
     } catch (e) {
       print(e);
     }
