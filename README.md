@@ -4,16 +4,15 @@ Kakao SDK 를 이용하여 Kakao 로그인 테스트
 
 ## 실행화면
 
-### Home
+### 1. Home
 
 ![home](./sample_image/home.png)
 
-### Kakao talk 설치 확인
+### 2. Kakao talk 설치 확인
 
 ![home](./sample_image/install.png)
 
-
-### Kakao Login
+### 3. Kakao Login
 
 |#1|#2|#3|#4|
 |---|---|---|---|
