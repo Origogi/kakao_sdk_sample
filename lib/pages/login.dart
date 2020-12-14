@@ -63,6 +63,9 @@ class LoginDone extends StatelessWidget {
     _getUser();
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Result'),
+      ),
       body: SafeArea(
         child: Center(
           child: Text('Login Success!'),
